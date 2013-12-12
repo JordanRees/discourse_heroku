@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round)
+@import colors
+
++font-face(entypo-social, 'entypo-social', normal, $asset-pipeline: true)
+
+@mixin entypo-social
+  font-family: "entypo-social"
+
+body
+  font-family: 'Varela Round', sans-serif
+  color: $dark
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 400
+  margin: 0 0 12px
+  letter-spacing: -0.2px
+
+h1
+  font-size: 34px
+  line-height: 42px
+  color: $dark
+
+h2
+  font-size: 24px
+  margin: 0 0 16px
+
+h3
+  margin: 0 0 18px
+
+p
+  font-size: 16px
+  line-height: 28px
+  margin: 0 0 18px
+  color: $light
+
+b
+  color: $dark
+
+a
+  +transition(color .4s)
+  color: $green

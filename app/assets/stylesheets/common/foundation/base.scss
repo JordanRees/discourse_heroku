@@ -1,5 +1,6 @@
 @import "common/foundation/variables";
 @import "common/foundation/mixins";
+@import "bourbon/bourbon";
 
 // --------------------------------------------------
 // Base styles for HTML elements
@@ -9,6 +10,7 @@ html {
   color: $black;
   font: #{$base-font-size}/#{$base-line-height} $base-font-family;
   background-color: #fff;
+  @include retina-image(geometry, 412px, jpg,$asset-pipeline: true);
   overflow-y: scroll;
   -webkit-font-smoothing: subpixel-antialiased;
 }
