@@ -25,7 +25,7 @@ Once the app is running locally, and while still in the app directory, execute t
   1. `$ heroku addons:add papertrail`
   1. `$ heroku addons:add librato --logs`
   1. `$ heroku addons:add honeybadger`
-  1. `$ heroku addons:add newrelic:standard`
+  1. `$ heroku addons:add newrelic:stark`
 1. Enable recommended lab features
   1. `$ heroku labs:enable user-env-compile`
   1. `$ heroku labs:enable log-runtime-metrics`
@@ -36,7 +36,7 @@ $ heroku config:set SECRET_TOKEN=`openssl rand -base64 32` RACK_ENV=production R
 1. Deploy and scale
   1. `$ git push heroku master` (this initial deploy can take some time due to the extensive dependency list and asset compilation for an app of Discourse's size)
   1. `$ heroku run bundle exec rake db:migrate`
-  1. `$ heroku ps:scale web=1 sidekiq=1`
+  1. `$ heroku ps:scale web=1 worker=1`
   1. `$ heroku open`
   1. Verify dyno startup w/ `$ heroku ps` and `$ heroku logs -t`
 
