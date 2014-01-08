@@ -11,8 +11,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 2px 0 rgba(70, 70, 70, .15);
-  background-color: #f7f7f9;
+  // box-shadow: 0 2px 0 rgba(70, 70, 70, .15);
+  background-color: #FDFDFD;
   .docked & {
     position: fixed;
   }
@@ -133,7 +133,7 @@
 }
 
 #main-outlet {
-  padding-top: 75px;
+  padding-top: 90px;
 }
 
 // Dropdowns
