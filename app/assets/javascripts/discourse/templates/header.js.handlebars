@@ -33,7 +33,7 @@
             <span class='username'><a {{bindAttr href="currentUser.path"}}>{{currentUser.displayName}}</a></span>
           {{else}}
             <button {{action showLogin}} class='btn btn-primary btn-small'>{{i18n log_in}}</button>
-            <button {{action showCreateAccount}} class='btn btn-primary btn-small signup-button'>Sign Up</button>
+            <button {{action showCreateAccount}} class='btn btn-primary btn-small'>Sign Up</button>
           {{/if}}
         </div>
       {{/unless}}
