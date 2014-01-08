@@ -29,7 +29,12 @@
     }
   }
   #site-logo {
-    max-width: 122px;
+    max-width: 200px;
+    width: 200px;
+  }
+  .logo-small {
+    max-height: 30px;
+    min-width: 36px;
   }
   .fa-home {
     font-size: 20px;
