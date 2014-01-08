@@ -130,6 +130,8 @@ Discourse::Application.routes.draw do
   get "tos" => "static#show", id: "tos"
   get "privacy" => "static#show", id: "privacy"
 
+  get 'sign-up', to: redirect('login')
+
   get "users/search/users" => "users#search_users"
   get "users/password-reset/:token" => "users#password_reset"
   put "users/password-reset/:token" => "users#password_reset"

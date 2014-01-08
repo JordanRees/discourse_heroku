@@ -1246,7 +1246,7 @@ en:
   login_required:
     welcome_message: |
       #[Welcome to %{title}](#welcome)
-      This discussion forum requires an account to view %{title}. Please create an account or login to continue.
+      Hello there! If you'd like to contribute to the discussion please create an account or login.
 
   terms_of_service:
     user_content_license: |
