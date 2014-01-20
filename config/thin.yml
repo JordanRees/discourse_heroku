@@ -1,12 +1,12 @@
 ---
-chdir: /home/bakis/discourse/current
+chdir: /home/bakis/1net-forum/current
 environment: production
 address: 0.0.0.0
 port: 3000
 timeout: 30
-log: /home/bakis/discourse/shared/log/thin.log
-pid: /home/bakis/discourse/shared/pids/thin.pid
-socket: /home/bakis/discourse/shared/sockets/thin.sock
+log: /home/bakis/1net-forum/shared/log/thin.log
+pid: /home/bakis/1net-forum/shared/pids/thin.pid
+socket: /home/bakis/1net-forum/shared/sockets/thin.sock
 max_conns: 1024
 max_persistent_conns: 100
 require: []
