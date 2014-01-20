@@ -217,6 +217,11 @@ gem 'honeybadger'
 gem 'ruby-readability', require: false
 gem 'simple-rss', require: false
 
+gem 'capistrano', require: nil
+gem 'capistrano-bundler', require: nil
+gem 'capistrano-rbenv', require: nil
+gem 'capistrano-rails', require: nil
+
 # perftools only works on 1.9 atm
 group :profile do
   # travis refuses to install this, instead of fuffing, just avoid it for now

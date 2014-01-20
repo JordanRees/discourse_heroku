@@ -40,7 +40,7 @@ production:
   socket: <%= GlobalSetting.db_socket %>
   host: <%= GlobalSetting.db_host %>
   port: <%= GlobalSetting.db_port %>
-  database: <%= GlobalSetting.db_name %>
+  database: discourse_production
   username: <%= GlobalSetting.db_username %>
   password: <%= GlobalSetting.db_password %>
   host_names:

@@ -32,13 +32,13 @@ Discourse::Application.configure do
   # the I18n.default_locale when a translation can not be found)
   config.i18n.fallbacks = true
 
-  ActionMailer::Base.smtp_settings = {
-    :address        => 'smtp.sendgrid.net',
-    :port           => '587',
-    :authentication => :plain,
-    :user_name      => ENV['SENDGRID_USERNAME'],
-    :password       => ENV['SENDGRID_PASSWORD'],
-    :domain         => 'herokuapp.com',
+  config.action_mailer.smtp_settings = {
+    :address        => 'smtp.mandrillapp.com',
+    :port           => '25',
+    :authentication => :login,
+    :user_name      => ENV['MANDRILL_USERNAME'],
+    :password       => ENV['MANDRILL_PASSWORD'],
+    :domain         => 'forum.1net.org',
     :enable_starttls_auto => true
   }
 
